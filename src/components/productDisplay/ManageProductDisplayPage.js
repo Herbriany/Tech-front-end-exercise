@@ -11,11 +11,8 @@ function ManageProductDisplayPage() {
         getProducts().then(_products => setProducts(_products))
     } , [])
 
-    debugger
-    
     return (
         <div>
-            Product Page
             { 
                 products.length === (0 || undefined)
                 ? <Spinner /> 

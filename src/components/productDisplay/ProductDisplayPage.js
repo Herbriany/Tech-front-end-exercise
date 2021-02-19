@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Product from './Product'
 
 function ProductDisplayPage({ products }) {
-    debugger
     return (
-        <div>
-            {
-                products.map(product => {
-                    return <img src={product.image} key={product.title}/>
-                })
-            }
+        <div className="container">
+            <div className="row">
+                {
+                    products.map(product => <Product product={product} key={product.productId}/>)
+                }
+            </div>
         </div>
     )
 }
