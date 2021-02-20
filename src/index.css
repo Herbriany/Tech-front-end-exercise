@@ -1,6 +1,9 @@
 * {
     background-color: #F5F5F5;
 }
+#app {
+    margin: 0;
+}
 
 .product {
     padding: 20px;
@@ -10,4 +13,15 @@
 
 .product > * {
     background-color: #FFF
+}
+
+.header {
+    height: 80px;
+    margin: auto;
+    padding: 25px;
+}
+
+.header-basket-button {
+    background-color: #FFF;
+    border: 1px solid black;
 }

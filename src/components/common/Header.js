@@ -2,8 +2,8 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>
-            Header
+        <div className="header">
+            <button className="header-basket-button">Your basket</button>
         </div>
     )
 }

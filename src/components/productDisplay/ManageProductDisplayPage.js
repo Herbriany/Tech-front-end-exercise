@@ -12,13 +12,13 @@ function ManageProductDisplayPage() {
     } , [])
 
     return (
-        <div>
+        <>
             { 
                 products.length === (0 || undefined)
                 ? <Spinner /> 
                 : <ProductDisplayPage products={products}/>
             }
-        </div>
+        </>
     )
 }
 
