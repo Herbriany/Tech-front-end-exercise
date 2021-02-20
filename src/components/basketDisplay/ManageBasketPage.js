@@ -1,10 +1,9 @@
 import React from 'react'
+import BasketPage from './BasketPage'
 
 function ManageBasketPage() {
     return (
-        <div>
-            Basket Page
-        </div>
+        <BasketPage />
     )
 }
 

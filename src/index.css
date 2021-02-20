@@ -1,6 +1,9 @@
-* {
+body {
     background-color: #F5F5F5;
+    min-height: 100%;
+    margin: 0;
 }
+
 #app {
     margin: 0;
 }
@@ -15,13 +18,27 @@
     background-color: #FFF
 }
 
-.header {
-    height: 80px;
-    margin: auto;
-    padding: 25px;
-}
-
 .header-basket-button {
     background-color: #FFF;
     border: 1px solid black;
+    display: inline;
+}
+
+.header-basket-button-container {
+    padding-right: 100px;
+}
+
+.sainsburys-logo {
+    height: 30px;
+    width: auto;
+}
+
+.sainsburys-logo-container {
+    padding-left: 100px;
+}
+
+.basketPage {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
 }
