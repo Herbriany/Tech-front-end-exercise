@@ -8,5 +8,4 @@ export default function productReducer(state = initialState.products, action) {
         default:
             return state
     }
-
 }

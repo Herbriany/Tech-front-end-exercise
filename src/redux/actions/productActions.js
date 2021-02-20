@@ -1,5 +1,5 @@
 import * as types from './actionTypes'
-import pdpApi from '../../api/pdpApi'
+import * as pdpApi from '../../api/pdpApi'
 
 export function loadProductsSuccess(products) {
     return { type: types.LOAD_PRODUCTS_SUCCESS, products}
