@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { getProducts } from '../../api/pdpApi'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 import Spinner from '../common/Spinner'
 import ProductDisplayPage from './ProductDisplayPage'
+import { loadProducts } from '../../redux/actions/productActions'
+import PropTypes from 'prop-types'
 
-function ManageProductDisplayPage() {
-
-    const [products, setProducts] = useState({})
+function ManageProductDisplayPage({products, loadProducts}) {
 
     useEffect(() => {
-        getProducts().then(_products => setProducts(_products))
+        if (!products.length){ 
+            loadProducts()
+            .catch(error => console.log(error))
+        }
     } , [])
 
     return (
@@ -22,4 +25,19 @@ function ManageProductDisplayPage() {
     )
 }
 
-export default ManageProductDisplayPage
+function mapStateToProps(state) {
+    return { 
+        products: state.products 
+    }
+}
+
+const mapDispatchToProps = {
+    loadProducts
+}
+
+ManageProductDisplayPage.propTypes = {
+    products: PropTypes.array.isRequired,
+    loadProducts: PropTypes.func.isRequired
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ManageProductDisplayPage)
