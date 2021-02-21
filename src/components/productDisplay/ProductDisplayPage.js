@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Product from './Product'
+import ManageProduct from './ManageProduct'
 
 function ProductDisplayPage({ products }) {
     return (
         <div className="container">
             <div className="row">
                 {
-                    products.map(product => <Product product={product} key={product.productId}/>)
+                    products.map(product => <ManageProduct product={product} key={product.productId}/>)
                 }
             </div>
         </div>
