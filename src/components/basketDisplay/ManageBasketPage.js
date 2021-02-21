@@ -8,8 +8,9 @@ function ManageBasketPage({basketProducts}) {
     // find array method for this
     let totalPrice = 0
     for(let i=0; i<basketProducts.length; i++) {
-        totalPrice += basketProducts[i].price
+        totalPrice += (basketProducts[i].price * basketProducts[i].amount)
     }
+    totalPrice = Math.round(totalPrice * 100) / 100
         
     return (
         <BasketPage basketProducts={basketProducts} totalPrice={totalPrice}/>

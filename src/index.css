@@ -42,3 +42,9 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+.basket-product-amount {
+    width: 20px;
+    padding: .375rem .75rem;
+    margin: auto;
+}
