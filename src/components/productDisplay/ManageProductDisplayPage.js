@@ -5,7 +5,7 @@ import ProductDisplayPage from './ProductDisplayPage'
 import { loadProducts } from '../../redux/actions/productActions'
 import PropTypes from 'prop-types'
 
-function ManageProductDisplayPage({products, loadProducts}) {
+function ManageProductDisplayPage({products, basket, loadProducts}) {
 
     useEffect(() => {
         if (!products.length){ 
@@ -19,7 +19,7 @@ function ManageProductDisplayPage({products, loadProducts}) {
             { 
                 products.length === (0 || undefined)
                 ? <Spinner /> 
-                : <ProductDisplayPage products={products}/>
+                : <ProductDisplayPage products={products} basket={basket}/>
             }
         </>
     )
@@ -27,7 +27,8 @@ function ManageProductDisplayPage({products, loadProducts}) {
 
 function mapStateToProps(state) {
     return { 
-        products: state.products 
+        products: state.products,
+        basket: state.basket
     }
 }
 
@@ -37,6 +38,7 @@ const mapDispatchToProps = {
 
 ManageProductDisplayPage.propTypes = {
     products: PropTypes.array.isRequired,
+    basket: PropTypes.array.isRequired,
     loadProducts: PropTypes.func.isRequired
 }
 
