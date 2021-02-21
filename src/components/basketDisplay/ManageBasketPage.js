@@ -2,8 +2,9 @@ import React from 'react'
 import BasketPage from './BasketPage'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import { incrementBasketProduct } from '../../redux/actions/basketActions'
 
-function ManageBasketPage({basketProducts}) {
+function ManageBasketPage({basketProducts, incrementBasketProduct}) {
 
     // find array method for this
     let totalPrice = 0
@@ -12,8 +13,12 @@ function ManageBasketPage({basketProducts}) {
     }
     totalPrice = Math.round(totalPrice * 100) / 100
         
+    function handleIncrementClick(product) {
+        incrementBasketProduct(product)
+    }
+
     return (
-        <BasketPage basketProducts={basketProducts} totalPrice={totalPrice}/>
+        <BasketPage basketProducts={basketProducts} totalPrice={totalPrice} onIncrementClick={handleIncrementClick}/>
     )
 }
 function mapStateToProps(state) {
@@ -23,10 +28,12 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
+    incrementBasketProduct
 }
 
 ManageBasketPage.propTypes = {
-    basketProducts: PropTypes.array.isRequired
+    basketProducts: PropTypes.array.isRequired,
+    incrementBasketProduct: PropTypes.func
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ManageBasketPage)

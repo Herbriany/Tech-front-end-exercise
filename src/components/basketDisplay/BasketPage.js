@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function BasketPage({basketProducts, totalPrice}) {
+function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
     return (
         <div className="basketPage">
             <h2>Basket Page</h2>
@@ -30,10 +30,10 @@ function BasketPage({basketProducts, totalPrice}) {
                                     <div className="row">
                                         <button className="btn btn-secondary">-</button>
                                             <div className="basket-product-amount">{product.amount}</div>
-                                        <button className="btn btn-secondary" >+</button>
+                                        <button onClick={() => onIncrementClick(product)} className="btn btn-secondary" >+</button>
                                     </div>
                                     <div className="row">
-                                        &pound;{product.price*product.amount}
+                                        &pound;{(Math.round(product.price*product.amount*100)/100)}
                                     </div>
                                 </div>
                             </div>
