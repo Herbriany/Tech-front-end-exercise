@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function BasketPage({basketProducts, totalPrice, productAmount, onIncrementClick, onEmptyBasketClick }) {
+function BasketPage({basketProducts, totalPrice, productAmount, onDecrementClick, onIncrementClick, onEmptyBasketClick }) {
     return (
         <div className="basketPage">
             <h2>Your Basket</h2>
@@ -29,7 +29,7 @@ function BasketPage({basketProducts, totalPrice, productAmount, onIncrementClick
                                 </div>
                                 <div className="col col-lg-2">
                                     <div className="row">
-                                        <button className="btn btn-secondary">-</button>
+                                        <button onClick={() => onDecrementClick(product)} className="btn btn-secondary">-</button>
                                             <div className="basket-product-amount">{product.amount}</div>
                                         <button onClick={() => onIncrementClick(product)} className="btn btn-secondary" >+</button>
                                     </div>
@@ -71,6 +71,7 @@ BasketPage.propTypes = {
     basketProducts: PropTypes.array,
     totalPrice: PropTypes.number.isRequired,
     productAmount: PropTypes.number.isRequired,
+    onDecrementClick: PropTypes.func,
     onIncrementClick: PropTypes.func,
     onEmptyBasketClick: PropTypes.func
 }

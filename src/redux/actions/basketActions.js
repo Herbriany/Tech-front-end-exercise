@@ -10,6 +10,15 @@ export function incrementBasketProduct(product) {
     return {type: types.INCREMENT_BASKET_PRODUCT, product}
 }
 
+export function decrementBasketProduct(product) {
+    product = {...product, amount: product.amount - 1}
+    return {type: types.DECREMENT_BASKET_PRODUCT, product}
+}
+
+export function removeProduct(product) {
+    return {type: types.REMOVE_PRODUCT, product}
+}
+
 export function emptyBasket() {
     const products = []
     return {type: types.EMPTY_BASKET, products}

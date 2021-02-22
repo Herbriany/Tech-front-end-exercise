@@ -2,9 +2,9 @@ import React from 'react'
 import BasketPage from './BasketPage'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { incrementBasketProduct, emptyBasket } from '../../redux/actions/basketActions'
+import { decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct } from '../../redux/actions/basketActions'
 
-function ManageBasketPage({basketProducts, incrementBasketProduct, emptyBasket}) {
+function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct}) {
 
     // find array method for this
     let totalPrice = 0
@@ -19,8 +19,13 @@ function ManageBasketPage({basketProducts, incrementBasketProduct, emptyBasket})
         incrementBasketProduct(product)
     }
 
+    function handleDecrementClick(product) {
+        product.amount <= 1 ? 
+        removeProduct(product) :
+        decrementBasketProduct(product)
+    }
+
     function handleEmptyBasketClick() {
-        debugger
         emptyBasket()
     }
 
@@ -31,6 +36,7 @@ function ManageBasketPage({basketProducts, incrementBasketProduct, emptyBasket})
             productAmount={productAmount}
             onIncrementClick={handleIncrementClick} 
             onEmptyBasketClick={handleEmptyBasketClick}
+            onDecrementClick={handleDecrementClick} 
         />
     )
 }
@@ -42,13 +48,17 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = {
     incrementBasketProduct,
-    emptyBasket
+    decrementBasketProduct,
+    emptyBasket,
+    removeProduct
 }
 
 ManageBasketPage.propTypes = {
     basketProducts: PropTypes.array.isRequired,
     incrementBasketProduct: PropTypes.func,
-    emptyBasket: PropTypes.func
+    decrementBasketProduct: PropTypes.func,
+    emptyBasket: PropTypes.func,
+    removeProduct: PropTypes.func
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ManageBasketPage)
