@@ -29,6 +29,10 @@ function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBask
         emptyBasket()
     }
 
+    function handleRemoveProductClick(product) {
+        removeProduct(product)
+    }
+
     return (
         <BasketPage 
             basketProducts={basketProducts} 
@@ -37,6 +41,7 @@ function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBask
             onIncrementClick={handleIncrementClick} 
             onEmptyBasketClick={handleEmptyBasketClick}
             onDecrementClick={handleDecrementClick} 
+            onRemoveProductClick={handleRemoveProductClick}
         />
     )
 }

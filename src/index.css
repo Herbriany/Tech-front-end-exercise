@@ -48,3 +48,34 @@ body {
     padding: .375rem .75rem;
     margin: auto;
 }
+
+.basket-product {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.basket-table-header {
+    border-bottom: 1px solid rgb(184, 173, 173);
+    padding-bottom: 10px;
+}
+
+.basket-product img {
+    max-height: 80px;
+    width: auto;
+    padding-right: 5px;
+}
+
+.trash-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.trash-icon:hover {
+    cursor: pointer;
+}
+
+.basket-header {
+    padding-bottom: 12px;
+    padding-top: 20px;
+}
