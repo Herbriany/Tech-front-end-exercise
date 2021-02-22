@@ -1,4 +1,5 @@
 export default {
     products: [],
-    basket: []
+    basket: [],
+    totalProductCount: 0
 }

@@ -3,14 +3,8 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-function Header({ basket }) {
+function Header({ basket, totalProductCount }) {
     
-    // maybe add product amount value to store?
-    let productAmount = 0
-    for(let i=0; i<basket.length; i++) {
-        productAmount += basket[i].amount
-    }
-
     return (
         <div className="navbar navbar-light bg-light">
             <NavLink to="/">
@@ -21,7 +15,7 @@ function Header({ basket }) {
             <NavLink to="/trolley">
             <div className="header-basket-button-container">
                 <button className="btn btn-warning header-basket-button">
-                Your basket {productAmount > 0 && "(" + productAmount + " item" }{productAmount <= 1 ? '' : 's'}{productAmount > 0 && ')'}
+                Your basket {totalProductCount > 0 && "(" + totalProductCount + " item" }{totalProductCount <= 1 ? '' : 's'}{totalProductCount > 0 && ')'}
                 </button>
             </div>
             </NavLink>
@@ -30,12 +24,14 @@ function Header({ basket }) {
 }
 
 Header.propTypes = {
-    basket: PropTypes.array.isRequired
+    basket: PropTypes.array.isRequired,
+    totalProductCount: PropTypes.number.isRequired
 }
 
 function mapStateToProps(state) {
     return { 
-        basket: state.basket
+        basket: state.basket,
+        totalProductCount: state.totalProductCount
     }
 }
 
