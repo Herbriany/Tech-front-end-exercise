@@ -4,13 +4,16 @@ import Spinner from '../common/Spinner'
 import ProductDisplayPage from './ProductDisplayPage'
 import { loadProducts } from '../../redux/actions/productActions'
 import PropTypes from 'prop-types'
+import { toast } from 'react-toastify'
 
 function ManageProductDisplayPage({products, loadProducts}) {
 
     useEffect(() => {
         if (!products.length){ 
             loadProducts()
-            .catch(error => console.log(error))
+            .catch(error => {
+                toast.error("Products load error:" + error)
+            })
         }
     } , [])
 

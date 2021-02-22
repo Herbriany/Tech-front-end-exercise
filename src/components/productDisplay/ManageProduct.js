@@ -10,7 +10,9 @@ function ManageProduct({addProductToBasket, incrementBasketProduct, product, bas
     function handleAddProductClick(product, basketState=basket) {
         const basketProduct = basketState.find(_product => _product.productId === product.productId)
         basketProduct != undefined ? incrementBasketProduct(basketProduct) : addProductToBasket(product)
-        toast.success(`${product.title} added to your basket!`)
+        toast.success(`${product.title} added to your basket!`, {
+            position: toast.POSITION.TOP_LEFT
+          })
     }
 
     return (
