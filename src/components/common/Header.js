@@ -20,7 +20,7 @@ function Header({ basket }) {
             </NavLink>
             <NavLink to="/trolley">
             <div className="header-basket-button-container">
-                <button className="header-basket-button">
+                <button className="btn btn-warning header-basket-button">
                 Your basket {productAmount > 0 && "(" + productAmount + " item" }{productAmount <= 1 ? '' : 's'}{productAmount > 0 && ')'}
                 </button>
             </div>

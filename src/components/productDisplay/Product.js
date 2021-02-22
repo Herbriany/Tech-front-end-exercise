@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 
 function Product({ product, onAddProductClick }) {
     return (
-        <div className="col col-lg-3 col-sm-12 product">
-            <img src={product.image}/>
-            <p>{product.title}, {product.sku}</p>
-            <p>&pound;{product.price}</p>
-            <button onClick={() => onAddProductClick(product)}>Add to Basket</button>
+        <div className="col-lg-3 col-sm-12 col-md-12">
+            <div className="container product">
+                <div className="product-information">
+                    <img src={product.image}/>
+                    <p>{product.title}, {product.sku}</p>
+                </div>
+                <p>&pound;{product.price}</p>
+                <button className="btn btn-outline-secondary" onClick={() => onAddProductClick(product)}>Add to Basket</button>
+            </div>
         </div>
     )
 }

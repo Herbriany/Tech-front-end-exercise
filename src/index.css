@@ -1,31 +1,27 @@
-body {
-    background-color: #F5F5F5;
-    min-height: 100%;
-    margin: 0;
-}
-
-#app {
-    margin: 0;
-}
-
 .product {
+    margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid #6C757D;
     background-color: #FFF;
+    height: 330px;
 }
 
-.product > * {
-    background-color: #FFF
+.product-information {
+    height: 210px;
 }
 
 .header-basket-button {
-    background-color: #FFF;
-    border: 1px solid black;
-    display: inline;
+    background-color: #F06C00!important;
+    color: white!important;
+    font-weight: bold!important;
+}
+
+.header-basket-button:hover {
+    background-color:#eb9b34!important;
 }
 
 .header-basket-button-container {
-    padding-right: 100px;
+    margin-right: 100px;
 }
 
 .sainsburys-logo {
@@ -34,7 +30,7 @@ body {
 }
 
 .sainsburys-logo-container {
-    padding-left: 100px;
+    margin-left: 100px;
 }
 
 .basketPage {
@@ -83,4 +79,10 @@ body {
 .error-template {
     padding: 40px 15px;
     text-align: center;
+}
+
+@media(max-width: 766px) {
+    .sainsburys-logo-container, .header-basket-button-container  {
+        margin: 0px;
+    }
 }
