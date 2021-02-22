@@ -41,7 +41,7 @@ function BasketPage({basketProducts, totalPrice, productAmount, onDecrementClick
                             </div>
                             )
                         })
-                        :<div className="row">   
+                        :<div className="row" style={{marginTop: "10px"}}>   
                             <p>Your basket is empty</p>
                         </div>
                     }
