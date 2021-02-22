@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function BasketPage({basketProducts, totalPrice, productAmount, onIncrementClick, onEmptyBasketClick }) {
     return (
         <div className="basketPage">
-            <h2>Your Trolley</h2>
+            <h2>Your Basket</h2>
             <div className="row"> 
                 <div className="col col-lg-9 col-sm-12">
                     <div className="row">
