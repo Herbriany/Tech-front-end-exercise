@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-function Header({ basket, totalProductCount }) {
+function Header({ totalProductCount }) {
     
     return (
         <div className="navbar navbar-light bg-light">
@@ -24,13 +24,11 @@ function Header({ basket, totalProductCount }) {
 }
 
 Header.propTypes = {
-    basket: PropTypes.array.isRequired,
     totalProductCount: PropTypes.number.isRequired
 }
 
 function mapStateToProps(state) {
     return { 
-        basket: state.basket,
         totalProductCount: state.totalProductCount
     }
 }
