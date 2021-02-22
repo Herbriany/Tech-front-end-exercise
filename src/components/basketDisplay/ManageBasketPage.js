@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct } from '../../redux/actions/basketActions'
 
+
 function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct}) {
 
     // find array method for this
