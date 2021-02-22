@@ -9,3 +9,8 @@ export function incrementBasketProduct(product) {
     product = {...product, amount: product.amount + 1}
     return {type: types.INCREMENT_BASKET_PRODUCT, product}
 }
+
+export function emptyBasket() {
+    const products = []
+    return {type: types.EMPTY_BASKET, products}
+}

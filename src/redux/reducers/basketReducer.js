@@ -8,6 +8,8 @@ export default function basketReducer(state = initialState.basket, action) {
             return [...state, {...action.product}]
         case types.INCREMENT_BASKET_PRODUCT:
             return state.map(product => product.productId === action.product.productId ? action.product : product)
+        case types.EMPTY_BASKET:
+            return action.products
         default:
             return state
     }
