@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
+function BasketPage({basketProducts, totalPrice, productAmount, onIncrementClick, onEmptyBasketClick }) {
     return (
         <div className="basketPage">
-            <h2>Basket Page</h2>
+            <h2>Your Trolley</h2>
             <div className="row"> 
                 <div className="col col-lg-9 col-sm-12">
                     <div className="row">
                         <div className="col col-lg-10">
                             <div className="row">
-                                Items
+                                {productAmount} item{productAmount === 1 ? '' : 's'}
                             </div>
                         </div>
                         <div className="col col-lg-2">
@@ -19,7 +19,8 @@ function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
                             </div>
                         </div>
                     </div>
-                    { basketProducts.map(product =>{ 
+                    {basketProducts.length 
+                        ? basketProducts.map(product =>{ 
                         return ( 
                             <div className="row" key={product.productId}>
                                 <div className="col col-lg-10">
@@ -38,9 +39,20 @@ function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
                                 </div>
                             </div>
                             )
-                        })  
+                        })
+                        :<div className="row">   
+                            <p>Your basket is empty</p>
+                        </div>
+                    }
+                    {basketProducts.length ?
+                        <div className="row" style={{marginTop: "10px"}}>
+                            <button className="btn btn-danger" onClick={() => onEmptyBasketClick()}>Empty basket</button>
+                        </div>
+                        : ''
                     }
                 </div>
+                
+                {totalPrice != 0 &&
                 <div className="col col-lg-3 col-sm-12">
                     <div className="row">
                         Order summary
@@ -49,6 +61,7 @@ function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
                     Total: &pound;{totalPrice}
                     </div>
                 </div>
+                }
             </div>
         </div>
     )
@@ -56,6 +69,9 @@ function BasketPage({basketProducts, totalPrice, onIncrementClick}) {
 
 BasketPage.propTypes = {
     basketProducts: PropTypes.array,
-    totalPrice: PropTypes.number
+    totalPrice: PropTypes.number.isRequired,
+    productAmount: PropTypes.number.isRequired,
+    onIncrementClick: PropTypes.func,
+    onEmptyBasketClick: PropTypes.func
 }
 export default BasketPage

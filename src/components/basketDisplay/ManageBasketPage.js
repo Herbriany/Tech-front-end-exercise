@@ -8,8 +8,10 @@ function ManageBasketPage({basketProducts, incrementBasketProduct}) {
 
     // find array method for this
     let totalPrice = 0
+    let productAmount = 0
     for(let i=0; i<basketProducts.length; i++) {
         totalPrice += (basketProducts[i].price * basketProducts[i].amount)
+        productAmount += basketProducts[i].amount
     }
     totalPrice = Math.round(totalPrice * 100) / 100
         
@@ -17,8 +19,18 @@ function ManageBasketPage({basketProducts, incrementBasketProduct}) {
         incrementBasketProduct(product)
     }
 
+    function handleEmptyBasketClick() {
+        alert("emptying...")
+    }
+
     return (
-        <BasketPage basketProducts={basketProducts} totalPrice={totalPrice} onIncrementClick={handleIncrementClick}/>
+        <BasketPage 
+            basketProducts={basketProducts} 
+            totalPrice={totalPrice} 
+            productAmount={productAmount}
+            onIncrementClick={handleIncrementClick} 
+            onEmptyBasketClick={handleEmptyBasketClick}
+        />
     )
 }
 function mapStateToProps(state) {
