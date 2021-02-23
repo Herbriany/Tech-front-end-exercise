@@ -20,10 +20,11 @@ const BasketPage = ({basketProducts, totalPrice, productAmount, onDecrementClick
                                 </div>
                             </div>
                         </div>
+                        <ul>
                         {basketProducts.length 
                             ? basketProducts.map(product =>{ 
                             return ( 
-                                <div className="row basket-product" key={product.productId}>
+                                <li className="row basket-product" key={product.productId}>
                                     <div className="col-lg-10">
                                         <img src={product.image} />
                                         {product.title}
@@ -39,13 +40,14 @@ const BasketPage = ({basketProducts, totalPrice, productAmount, onDecrementClick
                                             &pound;{(Math.round(product.price*product.amount*100)/100)}
                                         </div>
                                     </div>
-                                </div>
+                                </li>
                                 )
                             })
-                            :<div className="row" style={{marginTop: "10px"}}>   
+                            :<li className="row" style={{marginTop: "10px"}}>   
                                 <p>Your basket is empty</p>
-                            </div>
+                            </li>
                         }
+                        </ul>
                         {basketProducts.length ?
                             <div className="row" style={{marginTop: "20px"}}>
                                 <button className="btn btn-danger" onClick={() => onEmptyBasketClick()}>Empty basket</button>
