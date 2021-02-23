@@ -7,11 +7,9 @@ import { decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProd
 
 function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct, totalProductCount}) {
 
-    // find array method for this
-    let totalPrice = 0
-    for(let i=0; i<basketProducts.length; i++) {
-        totalPrice += (basketProducts[i].price * basketProducts[i].amount)
-    }
+    let totalPrice = basketProducts.reduce((price, product) => {
+        return price += (product.price * product.amount)
+    }, 0)
     totalPrice = Math.round(totalPrice * 100) / 100
         
     function handleIncrementClick(product) {
