@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct } from '../../redux/actions/basketActions'
 
 
-function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct, totalProductCount}) {
+export function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct, totalProductCount}) {
 
     let totalPrice = basketProducts.reduce((price, product) => {
         return price += (product.price * product.amount)
