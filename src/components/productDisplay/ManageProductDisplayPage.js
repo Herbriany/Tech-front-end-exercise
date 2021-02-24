@@ -20,7 +20,7 @@ function ManageProductDisplayPage({products, loadProducts}) {
     return (
         <>
             { 
-                products.length === (0 || undefined)
+                products.length === 0
                 ? <Spinner /> 
                 : <ProductDisplayPage products={products}/>
             }

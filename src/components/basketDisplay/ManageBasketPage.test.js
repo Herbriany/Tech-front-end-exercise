@@ -17,8 +17,15 @@ function render(args) {
     return mount(<ManageBasketPage {...props} />)
 }
 
-it("sets error when attempting to save an empty title field", () => {
-    const wrapper = render();
-    const error = wrapper.find("button").first();
-    expect(error.text()).toBe("-")
+describe("Mount tests", () => {
+    it("8 listed items in total", () => {
+        const wrapper = render();
+        expect(wrapper.find("li").length).toEqual(8)
+    })
+
+    it("sets error when attempting to save an empty title field", () => {
+        const wrapper = render();
+        const total = wrapper.find(".order-summary").find("p").last()
+        expect(total.text()).toEqual("Total: £1254.94")
+    })
 })

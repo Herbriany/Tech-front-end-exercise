@@ -17,11 +17,24 @@ function render(args) {
     const props = {...defaultProps, ...args}
     return shallow(<BasketPage {...props}/>)
 }
+describe("Shallow tests", () => {
+    it("Should read 'Your basket' for header", () => {
+        const wrapper = render()
+        expect(wrapper.find("h2").text()).toBe("Your Basket")
+    })
 
-it("Should read 'Your basket is empty' when no products in basket", () => {
-    const wrapper = render()
-    expect(wrapper.find("h2").text()).toBe("Your Basket")
-    
+    it("Should read 'Your basket is empty' when no products in basket", () => {
+        const wrapper = render()
+        expect(wrapper.find("li").text()).toBe("Your basket is empty")
+    })
+    it("Should be 8 list products when 8 products added", () => {
+        const wrapper = render({basketProducts: products})
+        expect(wrapper.find("li").length).toEqual(8)
+    })
+    it("Should have empty basket button on bottom when products present", () => {
+        const wrapper = render({basketProducts: products})
+        expect(wrapper.find("button").last().text()).toBe("Empty basket")
+    })
 })
 
 describe("snapshot tests", () => {

@@ -49,7 +49,7 @@ const BasketPage = ({basketProducts, totalPrice, productAmount, onDecrementClick
                         }
                         </ul>
                         {basketProducts.length ?
-                            <div className="row" style={{marginTop: "20px"}}>
+                            <div className="row" style={{margin: "20px"}}>
                                 <button className="btn btn-danger" onClick={() => onEmptyBasketClick()}>Empty basket</button>
                             </div>
                             : ''
@@ -58,7 +58,7 @@ const BasketPage = ({basketProducts, totalPrice, productAmount, onDecrementClick
                 </div>
                 
                 {totalPrice != 0 &&
-                <div className="col-lg-3 col-sm-12 col-xs-12">
+                <div className="col-lg-3 col-sm-12 col-xs-12 order-summary">
                     <div className="row">
                         <p style={{margin: "auto"}}>Order summary</p>
                     </div>
