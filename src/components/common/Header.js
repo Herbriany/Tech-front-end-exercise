@@ -15,7 +15,7 @@ function Header({ totalProductCount }) {
                 </NavLink>
                 <NavLink to="/trolley">
                 <div className="header-basket-button-container">
-                    <button className="btn btn-warning header-basket-button">
+                    <button type="button" name="header basket" className="btn btn-warning header-basket-button">
                     Your basket {totalProductCount > 0 && "(" + totalProductCount + " item" }{totalProductCount <= 1 ? '' : 's'}{totalProductCount > 0 && ')'}
                     </button>
                 </div>
