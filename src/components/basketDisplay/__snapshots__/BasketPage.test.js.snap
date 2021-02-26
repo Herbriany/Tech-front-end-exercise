@@ -50,6 +50,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
                 src="https://media.4rgos.it/s/Argos/9805244_R_SET?w=110&h=130"
               />
               Russell Hobbs Pennine Illuminating S Steel Kettle 20444
@@ -74,7 +75,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -85,7 +88,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -105,6 +110,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Challenge White Desk Fan - 12 Inch"
                 src="https://media.4rgos.it/s/Argos/4251824_R_SET?w=110&h=130"
               />
               Challenge White Desk Fan - 12 Inch
@@ -129,7 +135,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Challenge White Desk Fan - 12 Inch decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -140,7 +148,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Challenge White Desk Fan - 12 Inch increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -160,6 +170,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Plain Vest Top 12 BLACK"
                 src="https://media.4rgos.it/s/Argos/tuc132404445_R_SET?w=110&h=130"
               />
               Plain Vest Top 12 BLACK
@@ -184,7 +195,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Plain Vest Top 12 BLACK decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -195,7 +208,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Plain Vest Top 12 BLACK increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -215,6 +230,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Wilson Roger Federer 27 Inch Adult Tennis Racket"
                 src="https://media.4rgos.it/s/Argos/4049641_R_SET?w=110&h=130"
               />
               Wilson Roger Federer 27 Inch Adult Tennis Racket
@@ -239,7 +255,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Wilson Roger Federer 27 Inch Adult Tennis Racket decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -250,7 +268,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Wilson Roger Federer 27 Inch Adult Tennis Racket increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -270,6 +290,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="My Little Pony Cutie Mark Rainbow Dash"
                 src="https://media.4rgos.it/s/Argos/5399235_R_SET?w=110&h=130"
               />
               My Little Pony Cutie Mark Rainbow Dash
@@ -294,7 +315,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="My Little Pony Cutie Mark Rainbow Dash decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -305,7 +328,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="My Little Pony Cutie Mark Rainbow Dash increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -325,6 +350,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Sim Free iPhone X 256GB Mobile Phone- Space Grey"
                 src="https://media.4rgos.it/s/Argos/7543412_R_SET?w=110&h=130"
               />
               Sim Free iPhone X 256GB Mobile Phone- Space Grey
@@ -349,7 +375,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Sim Free iPhone X 256GB Mobile Phone- Space Grey decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -360,7 +388,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Sim Free iPhone X 256GB Mobile Phone- Space Grey increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -380,6 +410,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Assassin's Creed Origins PS4 Game"
                 src="https://media.4rgos.it/s/Argos/7067462_R_SET?w=110&h=130"
               />
               Assassin's Creed Origins PS4 Game
@@ -404,7 +435,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Assassin's Creed Origins PS4 Game decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -415,7 +448,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Assassin's Creed Origins PS4 Game increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -435,6 +470,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               className="col-lg-10"
             >
               <img
+                alt="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack"
                 src="https://media.4rgos.it/s/Argos/7426735_R_SET?w=110&h=130"
               />
               Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack
@@ -459,7 +495,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               >
                 <button
                   className="btn btn-secondary"
+                  name="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack decrement"
                   onClick={[Function]}
+                  type="button"
                 >
                   -
                 </button>
@@ -470,7 +508,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 </div>
                 <button
                   className="btn btn-secondary"
+                  name="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack increment"
                   onClick={[Function]}
+                  type="button"
                 >
                   +
                 </button>
@@ -488,13 +528,15 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
           className="row"
           style={
             Object {
-              "marginTop": "20px",
+              "margin": "20px",
             }
           }
         >
           <button
             className="btn btn-danger"
+            name="empty basket"
             onClick={[Function]}
+            type="button"
           >
             Empty basket
           </button>

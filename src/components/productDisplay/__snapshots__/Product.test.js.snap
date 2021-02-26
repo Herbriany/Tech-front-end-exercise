@@ -11,6 +11,7 @@ exports[`renders single product 1`] = `
       className="product-information"
     >
       <img
+        alt="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
         src="https://media.4rgos.it/s/Argos/9805244_R_SET?w=110&h=130"
       />
       <p>
@@ -24,8 +25,10 @@ exports[`renders single product 1`] = `
       24.99
     </p>
     <button
-      className="btn btn-outline-secondary"
+      className="btn btn-outline-secondary product-button"
+      name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
       onClick={[Function]}
+      type="button"
     >
       Add to Basket
     </button>
