@@ -9,4 +9,4 @@ First run npm install, then:
 
 Testing - Haven't done comprehensive testing of units, but have given example of testing action/reducer/store (using redux-mock-store and fetch-mock) and smart/dumb components using enzyme's mount/shallow and rendering snapshots. Have run a few HelloWorld tests with Cypress.
 
-Basket currently empties on refresh as data not stored anywhere. Would normally use async calls in the actions to store the data in a DB.
+Basket currently empties on refresh as data not stored anywhere. Would normally use async calls in the actions to store the data in a DB. Async calls would be monitored using API call actions start/success to track successful completion of the API calls.

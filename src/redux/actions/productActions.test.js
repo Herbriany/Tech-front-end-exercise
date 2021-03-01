@@ -39,7 +39,11 @@ describe("Async actions", () => {
             body: products, 
             headers: {"content-type": "application/json"}
         })
-        const expectedAction = [{ type: types.LOAD_PRODUCTS_SUCCESS, products}]
+        const expectedAction = [
+            { type: types.API_CALL_IN_PROGRESS},
+            { type: types.LOAD_PRODUCTS_SUCCESS, products},
+            { type: types.API_CALL_SUCCESS}
+        ]
 
         // action 
         const store = mockStore({ products: [] })

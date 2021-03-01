@@ -4,7 +4,7 @@
   "description": "Trolley API",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --port 3000",
-    "test": "jest --watchAll",
+    "test": "cross-env NODE_ENV=test jest --watchAll",
     "test:ci": "jest",
     "clean:build": "rimraf ./build && mkdir build",
     "prebuild": "run-p clean:build test:ci",
