@@ -1,1 +1,1 @@
-{"ignoreTestFiles": ["**/examples/*.spec.js", "**/basketTests/*.spec.js"]}
+{"ignoreTestFiles": "**/examples/*.spec.js"}
