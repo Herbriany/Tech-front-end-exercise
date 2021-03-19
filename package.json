@@ -9,7 +9,7 @@
     "clean:build": "rimraf ./build && mkdir build",
     "prebuild": "run-p clean:build test:ci",
     "build": "webpack --config webpack.config.prod.js",
-    "postbuild": "http-server ./build",
+    "serve": "http-server ./build",
     "cypress:run": "cross-env NODE_ENV=development cypress run"
   },
   "repository": {
