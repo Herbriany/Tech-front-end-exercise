@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                pwsh(script: 'npm install')
+                bat(script: 'npm install')
             }
         }
     }
