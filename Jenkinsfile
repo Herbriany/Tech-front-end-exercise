@@ -6,7 +6,7 @@ pipeline {
         stage('Pull') { 
             steps {
                 // Get some code from a GitHub repository
-                echo $GIT_BRANCH
+                echo "$GIT_BRANCH"
             }
         }
     }
