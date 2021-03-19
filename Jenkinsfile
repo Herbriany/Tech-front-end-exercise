@@ -9,9 +9,19 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
-        stage('Docker Build') {
+        stage('Build Install') {
             steps {
                 bat(script: 'npm install')
+            }
+        }
+        stage('Run tests') {
+            steps {
+                bat(script: 'npm run test:ci')
+            }
+        }
+        stage('Run Build') {
+            steps {
+                bat(script: 'npm run build' )
             }
         }
     }
