@@ -11,17 +11,25 @@ pipeline {
         }
         stage('Build Install') {
             steps {
-                bat(script: 'npm install')
+                sh(script: 'npm install')
             }
         }
         stage('Run tests') {
             steps {
-                bat(script: 'npm run test:ci')
+                sh(script: 'npm run test:ci')
             }
         }
         stage('Run Build') {
             steps {
-                bat(script: 'npm run build' )
+                sh(script: 'npm run build' )
+            }
+            post {
+                success {
+                    echo "App build success :)"
+                }
+                failure {
+                    echo "App build failed :("
+                }
             }
         }
     }
