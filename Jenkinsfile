@@ -21,10 +21,10 @@ pipeline {
         }
         stage('Run Build') {
             options {
-                timeout(time: 5, unit: 'MINS')
+                timeout(5)
             }
             steps {
-                sh(script: 'npm run build' )
+                sh(script: 'npm run build')
             }
             post {
                 success {
