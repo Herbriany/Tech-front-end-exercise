@@ -5,11 +5,11 @@ import { products } from '../../../tools/mockData'
 
 function render(args) {
     const defaultProps = {
-        basketProducts: products, 
-        decrementBasketProduct:jest.fn(), 
-        incrementBasketProduct:jest.fn(), 
-        emptyBasket:jest.fn(), 
-        removeProduct:jest.fn(), 
+        basketProducts: products,
+        decrementBasketProduct: jest.fn(),
+        incrementBasketProduct: jest.fn(),
+        emptyBasket: jest.fn(),
+        removeProduct: jest.fn(),
         totalProductCount: 8
     }
     const props = { ...defaultProps, ...args }

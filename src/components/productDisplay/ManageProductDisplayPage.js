@@ -6,30 +6,30 @@ import { loadProducts } from '../../redux/actions/productActions'
 import PropTypes from 'prop-types'
 import { toast } from 'react-toastify'
 
-function ManageProductDisplayPage({products, loadProducts}) {
+function ManageProductDisplayPage({ products, loadProducts }) {
 
     useEffect(() => {
-        if (!products.length){ 
+        if (!products.length) {
             loadProducts()
-            .catch(error => {
-                toast.error("Products load error:" + error)
-            })
+                .catch(error => {
+                    toast.error("Products load error:" + error)
+                })
         }
-    } , [])
+    }, [])
 
     return (
         <>
-            { 
+            {
                 products.length === 0
-                ? <Spinner /> 
-                : <ProductDisplayPage products={products}/>
+                    ? <Spinner />
+                    : <ProductDisplayPage products={products} />
             }
         </>
     )
 }
 
 function mapStateToProps(state) {
-    return { 
+    return {
         products: state.products,
     }
 }

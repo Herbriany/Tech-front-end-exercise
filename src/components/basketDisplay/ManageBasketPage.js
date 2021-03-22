@@ -5,21 +5,21 @@ import PropTypes from 'prop-types'
 import { decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct } from '../../redux/actions/basketActions'
 
 
-export function ManageBasketPage({basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct, totalProductCount}) {
+export function ManageBasketPage({ basketProducts, decrementBasketProduct, incrementBasketProduct, emptyBasket, removeProduct, totalProductCount }) {
 
     let totalPrice = basketProducts.reduce((price, product) => {
         return price += (product.price * product.amount)
     }, 0)
     totalPrice = Math.round(totalPrice * 100) / 100
-        
+
     function handleIncrementClick(product) {
         incrementBasketProduct(product)
     }
 
     function handleDecrementClick(product) {
-        product.amount <= 1 ? 
-        removeProduct(product) :
-        decrementBasketProduct(product)
+        product.amount <= 1 ?
+            removeProduct(product) :
+            decrementBasketProduct(product)
     }
 
     function handleEmptyBasketClick() {
@@ -31,19 +31,19 @@ export function ManageBasketPage({basketProducts, decrementBasketProduct, increm
     }
 
     return (
-        <BasketPage 
-            basketProducts={basketProducts} 
-            totalPrice={totalPrice} 
+        <BasketPage
+            basketProducts={basketProducts}
+            totalPrice={totalPrice}
             productAmount={totalProductCount}
-            onIncrementClick={handleIncrementClick} 
+            onIncrementClick={handleIncrementClick}
             onEmptyBasketClick={handleEmptyBasketClick}
-            onDecrementClick={handleDecrementClick} 
+            onDecrementClick={handleDecrementClick}
             onRemoveProductClick={handleRemoveProductClick}
         />
     )
 }
 function mapStateToProps(state) {
-    return { 
+    return {
         basketProducts: state.basket,
         totalProductCount: state.totalProductCount
     }

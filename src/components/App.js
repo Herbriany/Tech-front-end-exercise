@@ -7,7 +7,7 @@ import PageNotFound from './PageNotFound'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function App()  {
+function App() {
     return (
         <div className="container-fluid">
             <Header />
@@ -16,7 +16,7 @@ function App()  {
                 <Route path="/trolley" component={ManageBasketPage} />
                 <Route component={PageNotFound} />
             </Switch>
-            <ToastContainer autoClose={2000} hideProgressBar/>
+            <ToastContainer autoClose={2000} hideProgressBar />
         </div>
     )
 }

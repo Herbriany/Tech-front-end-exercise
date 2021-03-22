@@ -5,25 +5,25 @@ import Product from './Product'
 import { addProductToBasket, incrementBasketProduct } from '../../redux/actions/basketActions'
 import { toast } from 'react-toastify'
 
-function ManageProduct({addProductToBasket, incrementBasketProduct, product, basket}) {
+function ManageProduct({ addProductToBasket, incrementBasketProduct, product, basket }) {
 
-    function handleAddProductClick(product, basketState=basket) {
+    function handleAddProductClick(product, basketState = basket) {
         const basketProduct = basketState.find(_product => _product.productId === product.productId)
         basketProduct != undefined ? incrementBasketProduct(basketProduct) : addProductToBasket(product)
         toast.success(`${product.title} added to your basket!`, {
             position: toast.POSITION.TOP_LEFT
-          })
+        })
     }
 
     return (
         <>
-            <Product product={product} onAddProductClick={handleAddProductClick}/>
+            <Product product={product} onAddProductClick={handleAddProductClick} />
         </>
     )
 }
 
 function mapStateToProps(state) {
-    return { 
+    return {
         basket: state.basket
     }
 }
