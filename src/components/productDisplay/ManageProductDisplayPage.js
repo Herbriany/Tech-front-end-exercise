@@ -12,7 +12,7 @@ function ManageProductDisplayPage({ products, loadProducts }) {
         if (!products.length) {
             loadProducts()
                 .catch(error => {
-                    toast.error("Products load error:" + error)
+                    toast.error("Products load error: " + error.message)
                 })
         }
     }, [])
