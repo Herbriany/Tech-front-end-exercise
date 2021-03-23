@@ -1,0 +1,15 @@
+@import "./assets/scss/_variables";
+
+html {
+    font-family: $fonts;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding-bottom: 12px;
+    padding-top: 20px;
+}

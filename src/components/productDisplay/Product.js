@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Product.css'
 
 function Product({ product, onAddProductClick }) {
     return (
         <div className="col-lg-3 col-sm-12 col-md-12">
             <div className="container product">
-                <div className="product-information">
+                <div className="product__information">
                     <img alt={product.title} src={product.image} />
                     <p>{product.title}, {product.sku}</p>
                 </div>
                 <p>&pound;{product.price}</p>
-                <button type="button" name={product.title} className="btn btn-outline-secondary product-button" onClick={() => onAddProductClick(product)}>Add to Basket</button>
+                <button type="button" name={product.title} className="btn btn-outline-secondary" onClick={() => onAddProductClick(product)}>Add to Basket</button>
             </div>
         </div>
     )

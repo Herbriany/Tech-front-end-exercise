@@ -1,0 +1,38 @@
+.basket-page {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.basket-table-header {
+  border-bottom: 1px solid #6C757D;
+  padding-bottom: 10px;
+}
+
+.basket-product {
+  padding: 15px;
+  border-bottom: 1px solid #6C757D;
+}
+
+.basket-product__img {
+  max-height: 80px;
+  width: auto;
+  padding-right: 5px;
+}
+
+.basket-product__amount {
+  width: 20px;
+  padding: .375rem .75rem;
+  margin: auto;
+}
+
+.trash-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.trash-icon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=BasketPage.css.map */

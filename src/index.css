@@ -1,94 +1,14 @@
-.product {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #6C757D;
-    background-color: #FFF;
-    height: 340px;
-    border-radius: 5px;
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.product-information {
-    height: 220px;
+.header {
+  padding-bottom: 12px;
+  padding-top: 20px;
 }
-
-.header-basket-button {
-    background-color: #F06C00!important;
-    color: white!important;
-    font-weight: bold!important;
-}
-
-.header-basket-button:hover {
-    background-color:#eb9b34!important;
-}
-
-.header-basket-button-container {
-    margin-right: 100px;
-}
-
-.sainsburys-logo {
-    height: 30px;
-    width: auto;
-}
-
-.sainsburys-logo-container {
-    margin-left: 100px;
-}
-
-.basketPage {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.basket-product-amount {
-    width: 20px;
-    padding: .375rem .75rem;
-    margin: auto;
-}
-
-.basket-product {
-    padding: 15px;
-    border-bottom: 1px solid black;
-}
-
-.basket-table-header {
-    border-bottom: 1px solid rgb(184, 173, 173);
-    padding-bottom: 10px;
-}
-
-.basket-product img {
-    max-height: 80px;
-    width: auto;
-    padding-right: 5px;
-}
-
-.trash-icon {
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
-}
-
-.trash-icon:hover {
-    cursor: pointer;
-}
-
-.basket-header {
-    padding-bottom: 12px;
-    padding-top: 20px;
-}
-
-.error-template {
-    padding: 40px 15px;
-    text-align: center;
-}
-
-@media(max-width: 766px) {
-    .sainsburys-logo-container, .header-basket-button-container  {
-        margin: 0px;
-    }
-}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,33 @@
+@import "../../assets/scss/_variables";
+
+.header-basket {
+    margin-right: 100px;
+
+    &__button {
+
+        background-color: $web-orange;
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+            background-color:$web-orange-highlighted;
+            color: white;
+        }
+    }
+
+}
+
+.logo {
+    margin-left: 100px;
+
+    &__image {
+        height: 30px;
+        width: auto;
+    }
+}
+
+@media(max-width: 766px) {
+    .logo, .header-basket  {
+        margin: 0px;
+    }
+}

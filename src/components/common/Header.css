@@ -1,0 +1,30 @@
+.header-basket {
+  margin-right: 100px;
+}
+
+.header-basket__button {
+  background-color: #F06C00;
+  color: white;
+  font-weight: bold;
+}
+
+.header-basket__button:hover {
+  background-color: #dd902c;
+  color: white;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.logo__image {
+  height: 30px;
+  width: auto;
+}
+
+@media (max-width: 766px) {
+  .logo, .header-basket {
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

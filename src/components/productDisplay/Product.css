@@ -1,0 +1,13 @@
+.product {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #6C757D;
+  background-color: #FFF;
+  height: 340px;
+  border-radius: 5px;
+}
+
+.product__information {
+  height: 220px;
+}
+/*# sourceMappingURL=Product.css.map */

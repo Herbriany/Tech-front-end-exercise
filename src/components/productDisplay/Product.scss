@@ -1,0 +1,14 @@
+@import "../../assets/scss/_variables";
+
+.product {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid $grey-border;
+    background-color: #FFF;
+    height: 340px;
+    border-radius: 5px;
+
+    &__information {
+        height: 220px;
+    }
+}
