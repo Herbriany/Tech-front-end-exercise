@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot tests Should show 8 products and an order summary 1`] = `
-<div
-  className="basketPage"
+<main
+  className="basket-page"
+  role="main"
 >
-  <h2
-    className="basket-header"
+  <h1
+    className="header header--basket"
   >
     Your Basket
-  </h2>
+  </h1>
   <div
     className="row"
   >
@@ -42,7 +43,9 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             </div>
           </div>
         </div>
-        <ul>
+        <ul
+          className="basket-list"
+        >
           <li
             className="row basket-product"
           >
@@ -51,21 +54,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/9805244_R_SET?w=110&h=130"
               />
-              Russell Hobbs Pennine Illuminating S Steel Kettle 20444
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Russell Hobbs Pennine Illuminating S Steel Kettle 20444
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -82,7 +96,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -98,8 +112,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                24.99
+                <p>
+                  £
+                  24.99
+                </p>
               </div>
             </div>
           </li>
@@ -111,21 +127,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Challenge White Desk Fan - 12 Inch"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/4251824_R_SET?w=110&h=130"
               />
-              Challenge White Desk Fan - 12 Inch
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Challenge White Desk Fan - 12 Inch
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -142,7 +169,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -158,8 +185,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                14.99
+                <p>
+                  £
+                  14.99
+                </p>
               </div>
             </div>
           </li>
@@ -171,21 +200,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Plain Vest Top 12 BLACK"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/tuc132404445_R_SET?w=110&h=130"
               />
-              Plain Vest Top 12 BLACK
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Plain Vest Top 12 BLACK
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -202,7 +242,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -218,8 +258,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                16
+                <p>
+                  £
+                  16
+                </p>
               </div>
             </div>
           </li>
@@ -231,21 +273,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Wilson Roger Federer 27 Inch Adult Tennis Racket"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/4049641_R_SET?w=110&h=130"
               />
-              Wilson Roger Federer 27 Inch Adult Tennis Racket
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Wilson Roger Federer 27 Inch Adult Tennis Racket
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -262,7 +315,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -278,8 +331,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                24.99
+                <p>
+                  £
+                  24.99
+                </p>
               </div>
             </div>
           </li>
@@ -291,21 +346,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="My Little Pony Cutie Mark Rainbow Dash"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/5399235_R_SET?w=110&h=130"
               />
-              My Little Pony Cutie Mark Rainbow Dash
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                My Little Pony Cutie Mark Rainbow Dash
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -322,7 +388,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -338,8 +404,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                24.99
+                <p>
+                  £
+                  24.99
+                </p>
               </div>
             </div>
           </li>
@@ -351,21 +419,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Sim Free iPhone X 256GB Mobile Phone- Space Grey"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/7543412_R_SET?w=110&h=130"
               />
-              Sim Free iPhone X 256GB Mobile Phone- Space Grey
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Sim Free iPhone X 256GB Mobile Phone- Space Grey
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -382,7 +461,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -398,8 +477,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                1109
+                <p>
+                  £
+                  1109
+                </p>
               </div>
             </div>
           </li>
@@ -411,21 +492,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Assassin's Creed Origins PS4 Game"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/7067462_R_SET?w=110&h=130"
               />
-              Assassin's Creed Origins PS4 Game
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Assassin's Creed Origins PS4 Game
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -442,7 +534,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -458,8 +550,10 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                30.99
+                <p>
+                  £
+                  30.99
+                </p>
               </div>
             </div>
           </li>
@@ -471,21 +565,32 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
             >
               <img
                 alt="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack"
+                className="basket-product__img"
                 src="https://media.4rgos.it/s/Argos/7426735_R_SET?w=110&h=130"
               />
-              Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack
-              <svg
-                className="trash-icon"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 24 24"
+              <span
+                className="basket-product__title"
               >
-                <path
-                  d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
-                  fill="#b8adad"
-                  fillRule="nonzero"
-                />
-              </svg>
+                Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack
+              </span>
+              <button
+                aria-label="Delete all of this item"
+                className="basket-product__trash-button"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="basket-product__trash-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 6l.001-1.51h.147a3.49 3.49 0 0 1 3.342-2.488L12.505 2a3.49 3.49 0 0 1 3.49 3.49v.065L15.987 6H20a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2h4zm2.002 0h3.984v-.019l.01-.463V5.49A1.49 1.49 0 0 0 12.506 4l-1.015.002a1.49 1.49 0 0 0-1.49 1.489V6zM8.5 11a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm5 0a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0v-6zm-9.447-.008a1 1 0 1 1 2 .016l-.055 7.094A1.886 1.886 0 0 0 7.88 20h8.237c1.04 0 1.883-.843 1.883-1.892l-.032-7.103a1 1 0 1 1 2-.01l.032 7.122A3.883 3.883 0 0 1 16.118 22H7.851a3.883 3.883 0 0 1-3.853-3.913l.055-7.095z"
+                    fill="#b8adad"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </button>
             </div>
             <div
               className="col-lg-2"
@@ -502,7 +607,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   -
                 </button>
                 <div
-                  className="basket-product-amount"
+                  className="basket-product__amount"
                 >
                   1
                 </div>
@@ -518,19 +623,16 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
               <div
                 className="row"
               >
-                £
-                8.99
+                <p>
+                  £
+                  8.99
+                </p>
               </div>
             </div>
           </li>
         </ul>
         <div
-          className="row"
-          style={
-            Object {
-              "margin": "20px",
-            }
-          }
+          className="container--empty-basket-button"
         >
           <button
             className="btn btn-danger"
@@ -544,49 +646,34 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
       </div>
     </div>
     <div
-      className="col-lg-3 col-sm-12 col-xs-12 order-summary"
+      className="col-lg-3 col-sm-12 col-xs-12 basket-summary"
     >
-      <div
-        className="row"
+      <p
+        className="row basket-summary__title"
       >
-        <p
-          style={
-            Object {
-              "margin": "auto",
-            }
-          }
-        >
-          Order summary
-        </p>
-      </div>
-      <div
-        className="row"
+        Order summary
+      </p>
+      <p
+        className="row basket-summary__total"
       >
-        <p
-          style={
-            Object {
-              "margin": "auto",
-            }
-          }
-        >
-          Total: £
-          24.99
-        </p>
-      </div>
+        Total: £
+        24.99
+      </p>
     </div>
   </div>
-</div>
+</main>
 `;
 
 exports[`snapshot tests Should show empty basket and no order summary 1`] = `
-<div
-  className="basketPage"
+<main
+  className="basket-page"
+  role="main"
 >
-  <h2
-    className="basket-header"
+  <h1
+    className="header header--basket"
   >
     Your Basket
-  </h2>
+  </h1>
   <div
     className="row"
   >
@@ -620,14 +707,11 @@ exports[`snapshot tests Should show empty basket and no order summary 1`] = `
             </div>
           </div>
         </div>
-        <ul>
+        <ul
+          className="basket-list"
+        >
           <li
-            className="row"
-            style={
-              Object {
-                "marginTop": "10px",
-              }
-            }
+            className="row basket-list__empty-item"
           >
             <p>
               Your basket is empty
@@ -638,5 +722,5 @@ exports[`snapshot tests Should show empty basket and no order summary 1`] = `
       </div>
     </div>
   </div>
-</div>
+</main>
 `;

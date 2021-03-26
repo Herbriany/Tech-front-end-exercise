@@ -7,8 +7,21 @@ ul {
   margin: 0;
 }
 
+a, p {
+  line-height: 1.5em;
+}
+
 .header {
   padding-bottom: 12px;
   padding-top: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=index.css.map */

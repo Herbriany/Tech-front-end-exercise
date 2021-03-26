@@ -25,7 +25,7 @@ describe("Mount tests", () => {
 
     it("sets error when attempting to save an empty title field", () => {
         const wrapper = render();
-        const total = wrapper.find(".order-summary").find("p").last()
+        const total = wrapper.find(".basket-summary").find("p").last()
         expect(total.text()).toEqual("Total: £1254.94")
     })
 })

@@ -20,7 +20,7 @@ function render(args) {
 describe("Shallow tests", () => {
     it("Should read 'Your basket' for header", () => {
         const wrapper = render()
-        expect(wrapper.find("h2").text()).toBe("Your Basket")
+        expect(wrapper.find("h1").text()).toBe("Your Basket")
     })
 
     it("Should read 'Your basket is empty' when no products in basket", () => {

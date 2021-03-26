@@ -1,18 +1,31 @@
 @import "../../assets/scss/_variables";
 
+.navbar {
+   &__title {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+   }
+}
+
 .header-basket {
     margin-right: 100px;
 
     &__button {
 
         background-color: $web-orange;
-        color: white;
+        color: $button-text-color;
         font-weight: bold;
 
-        &:hover {
+        &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active  {
             background-color:$web-orange-highlighted;
-            color: white;
+            color: $button-text-color;
         }
+
+        
     }
 
 }

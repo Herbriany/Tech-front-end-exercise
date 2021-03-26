@@ -8,7 +8,7 @@ exports[`renders single product 1`] = `
     className="container product"
   >
     <div
-      className="product-information"
+      className="product__information"
     >
       <img
         alt="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
@@ -25,7 +25,7 @@ exports[`renders single product 1`] = `
       24.99
     </p>
     <button
-      className="btn btn-outline-secondary product-button"
+      className="btn btn-outline-secondary"
       name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444"
       onClick={[Function]}
       type="button"

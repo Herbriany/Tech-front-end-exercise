@@ -7,8 +7,9 @@ import './Header.css'
 function Header({ totalProductCount }) {
 
     return (
-        <header>
-            <nav className="navbar navbar-light bg-light">
+        <header role="banner">
+            <nav role="navigation" className="navbar navbar-light bg-light">
+                <h2 className="navbar__title visually-hidden">Main Navigation</h2>
                 <NavLink to="/">
                     <div className="logo">
                         <img src="https://www.sainsburys.co.uk/assets/images/5TrheyQtjk6OXYZV6GvC1R_1465b369098512594f5d934fac5ae00f_sainsburys-logo.svg" alt="Sainsbury’s" width="204" height="40" className="logo__image" />

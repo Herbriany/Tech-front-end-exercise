@@ -1,5 +1,9 @@
 @import "../../assets/scss/_variables";
 
+.header--basket {
+    font-size: 2rem;
+}
+
 .basket-page {
     max-width: 960px;
     margin-right: auto;
@@ -25,14 +29,44 @@
         padding: .375rem .75rem;
         margin: auto;
     }
-}
 
-.trash-icon {
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
+    &__title {
+        display: inline;
+    }
 
-    &:hover {
-        cursor: pointer;
+    &__trash-button {
+        border: 0;
+        padding: 0;
+        background-color: $background-color;
+    }
+
+    &__trash-icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+    
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
+
+.basket-summary{
+    &__title {
+        margin: auto;
+    }
+    &__total {
+        margin: auto;
+    }
+}
+
+.basket-list {
+    &__empty-item {
+        margin-top: 10px;
+    }
+}
+
+.container--empty-basket-button {
+    margin: 20px;
+}
+

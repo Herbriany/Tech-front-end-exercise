@@ -4,14 +4,14 @@ import ManageProduct from './ManageProduct'
 
 function ProductDisplayPage({ products }) {
     return (
-        <div className="container">
-            <h2 className="header">Products</h2>
+        <main role="main" className="container">
+            <h1 className="header header--products">Products</h1>
             <div className="row">
                 {
                     products.map(product => <ManageProduct product={product} key={product.productId} />)
                 }
             </div>
-        </div>
+        </main>
     )
 }
 
