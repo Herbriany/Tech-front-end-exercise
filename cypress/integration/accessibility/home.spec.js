@@ -7,7 +7,7 @@ describe('A11y', () => {
         cy.visit('http://localhost:8080/')
         cy.get('.header-basket__button').click()
         cy.injectAxe()
-        cy.checkA11y()
+        cy.checkA11y(null, { includedImpacts: ['critical'] })
     })
 
     it('non empty basket page accessibility', () => {
@@ -15,6 +15,6 @@ describe('A11y', () => {
         cy.get('.product > button').first().click()
         cy.get('.header-basket__button').click()
         cy.injectAxe()
-        cy.checkA11y()
+        cy.checkA11y(null, { includedImpacts: ['critical'] })
     })
 })

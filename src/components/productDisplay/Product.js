@@ -11,7 +11,7 @@ function Product({ product, onAddProductClick }) {
                     <p>{product.title}, {product.sku}</p>
                 </div>
                 <p>&pound;{product.price}</p>
-                <button type="button" name={product.title} className="btn btn-outline-secondary" onClick={() => onAddProductClick(product)}>Add to Basket</button>
+                <button type="button" name={product.title} className="btn btn-outline-secondary" aria-label={"Add" + product.title + "to basket. Priced " + product.price} onClick={() => onAddProductClick(product)}>Add to Basket</button>
             </div>
         </div>
     )

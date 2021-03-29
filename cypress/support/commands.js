@@ -44,5 +44,5 @@ function terminalLog(violations) {
 Cypress.Commands.add("checkPageA11y", (path) => {
     cy.visit(path)
     cy.injectAxe()
-    cy.checkA11y(null, null, terminalLog)
+    cy.checkA11y(null, { includedImpacts: ['critical'] }, terminalLog)
 })

@@ -63,7 +63,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Russell Hobbs Pennine Illuminating S Steel Kettle 20444
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allRussell Hobbs Pennine Illuminating S Steel Kettle 20444"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -88,6 +88,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 decrement"
                   className="btn btn-secondary"
                   name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 decrement"
                   onClick={[Function]}
@@ -101,6 +102,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 increment"
                   className="btn btn-secondary"
                   name="Russell Hobbs Pennine Illuminating S Steel Kettle 20444 increment"
                   onClick={[Function]}
@@ -136,7 +138,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Challenge White Desk Fan - 12 Inch
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allChallenge White Desk Fan - 12 Inch"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -161,6 +163,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Challenge White Desk Fan - 12 Inch decrement"
                   className="btn btn-secondary"
                   name="Challenge White Desk Fan - 12 Inch decrement"
                   onClick={[Function]}
@@ -174,6 +177,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Challenge White Desk Fan - 12 Inch increment"
                   className="btn btn-secondary"
                   name="Challenge White Desk Fan - 12 Inch increment"
                   onClick={[Function]}
@@ -209,7 +213,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Plain Vest Top 12 BLACK
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allPlain Vest Top 12 BLACK"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -234,6 +238,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Plain Vest Top 12 BLACK decrement"
                   className="btn btn-secondary"
                   name="Plain Vest Top 12 BLACK decrement"
                   onClick={[Function]}
@@ -247,6 +252,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Plain Vest Top 12 BLACK increment"
                   className="btn btn-secondary"
                   name="Plain Vest Top 12 BLACK increment"
                   onClick={[Function]}
@@ -282,7 +288,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Wilson Roger Federer 27 Inch Adult Tennis Racket
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allWilson Roger Federer 27 Inch Adult Tennis Racket"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -307,6 +313,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Wilson Roger Federer 27 Inch Adult Tennis Racket decrement"
                   className="btn btn-secondary"
                   name="Wilson Roger Federer 27 Inch Adult Tennis Racket decrement"
                   onClick={[Function]}
@@ -320,6 +327,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Wilson Roger Federer 27 Inch Adult Tennis Racket increment"
                   className="btn btn-secondary"
                   name="Wilson Roger Federer 27 Inch Adult Tennis Racket increment"
                   onClick={[Function]}
@@ -355,7 +363,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 My Little Pony Cutie Mark Rainbow Dash
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allMy Little Pony Cutie Mark Rainbow Dash"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -380,6 +388,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="My Little Pony Cutie Mark Rainbow Dash decrement"
                   className="btn btn-secondary"
                   name="My Little Pony Cutie Mark Rainbow Dash decrement"
                   onClick={[Function]}
@@ -393,6 +402,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="My Little Pony Cutie Mark Rainbow Dash increment"
                   className="btn btn-secondary"
                   name="My Little Pony Cutie Mark Rainbow Dash increment"
                   onClick={[Function]}
@@ -428,7 +438,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Sim Free iPhone X 256GB Mobile Phone- Space Grey
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allSim Free iPhone X 256GB Mobile Phone- Space Grey"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -453,6 +463,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Sim Free iPhone X 256GB Mobile Phone- Space Grey decrement"
                   className="btn btn-secondary"
                   name="Sim Free iPhone X 256GB Mobile Phone- Space Grey decrement"
                   onClick={[Function]}
@@ -466,6 +477,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Sim Free iPhone X 256GB Mobile Phone- Space Grey increment"
                   className="btn btn-secondary"
                   name="Sim Free iPhone X 256GB Mobile Phone- Space Grey increment"
                   onClick={[Function]}
@@ -501,7 +513,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Assassin's Creed Origins PS4 Game
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allAssassin's Creed Origins PS4 Game"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -526,6 +538,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Assassin's Creed Origins PS4 Game decrement"
                   className="btn btn-secondary"
                   name="Assassin's Creed Origins PS4 Game decrement"
                   onClick={[Function]}
@@ -539,6 +552,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Assassin's Creed Origins PS4 Game increment"
                   className="btn btn-secondary"
                   name="Assassin's Creed Origins PS4 Game increment"
                   onClick={[Function]}
@@ -574,7 +588,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack
               </span>
               <button
-                aria-label="Delete all of this item"
+                aria-label="Delete allDuracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack"
                 className="basket-product__trash-button"
                 onClick={[Function]}
               >
@@ -599,6 +613,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                 className="row"
               >
                 <button
+                  aria-label="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack decrement"
                   className="btn btn-secondary"
                   name="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack decrement"
                   onClick={[Function]}
@@ -612,6 +627,7 @@ exports[`snapshot tests Should show 8 products and an order summary 1`] = `
                   1
                 </div>
                 <button
+                  aria-label="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack increment"
                   className="btn btn-secondary"
                   name="Duracell Supreme 750 mAh Rechargeable AAA Batteries - 4 Pack increment"
                   onClick={[Function]}
