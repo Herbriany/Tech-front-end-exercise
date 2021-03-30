@@ -4,7 +4,7 @@ import './BasketPage.css'
 
 const BasketPage = ({ basketProducts, totalPrice, productAmount, onDecrementClick, onIncrementClick, onEmptyBasketClick, onRemoveProductClick }) => {
     return (
-        <main role="main" className="basket-page">
+        <main role="main" className="basket-page" data-skip-link="Go to Basket" id="basket">
             <h1 className="header header--basket">Your Basket</h1>
             <div className="row">
                 <div className="col-lg-9 col-sm-12 col-xs-12">

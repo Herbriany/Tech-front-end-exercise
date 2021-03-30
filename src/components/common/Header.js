@@ -7,7 +7,7 @@ import './Header.css'
 function Header({ totalProductCount }) {
 
     return (
-        <header role="banner">
+        <header role="banner" data-skip-link="Go to Header" id="header">
             <nav role="navigation" className="navbar navbar-light bg-light">
                 <h2 className="navbar__title visually-hidden">Main Navigation</h2>
                 <NavLink to="/" exact>

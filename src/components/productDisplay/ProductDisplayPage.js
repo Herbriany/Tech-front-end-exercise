@@ -4,7 +4,7 @@ import ManageProduct from './ManageProduct'
 
 function ProductDisplayPage({ products }) {
     return (
-        <main role="main" className="container">
+        <main role="main" data-skip-link="Go to Products" id="products" className="container">
             <h1 className="header header--products">Products</h1>
             <div className="row">
                 {

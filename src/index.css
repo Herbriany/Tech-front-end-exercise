@@ -18,10 +18,12 @@ a, p {
 
 .visually-hidden {
   position: absolute;
+  top: 0;
+  z-index: 2;
   left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+}
+
+.visually-hidden:focus {
+  left: 20px;
 }
 /*# sourceMappingURL=index.css.map */
